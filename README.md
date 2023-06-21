@@ -1,3 +1,130 @@
+# MTD
+Multi-Timestep Detector for Delayed Streaming Perception
+
+## Benchmark
+<table width="1000px" cellspacing="10">
+<tr>
+  <th align="center">Model</th>
+  <th align="center">Size</th>
+  <th align="center">sAP 0.5:0.95</th>
+  <th align="center">sAP50</th>
+  <th align="center">sAP75</th>
+  <th align="center">weights</th>
+</tr>
+<tr>
+  <td colspan="6" align="center">None (27ms±1)</td>
+</tr>
+<tr>
+    <tr>
+      <td align="center">StreamYOLO</td>
+      <td align="center">600×960</td>
+      <td align="center">36.9</td>
+      <td align="center">58.1</td>
+      <td align="center">37.6</td>
+      <td align="center"><a href="https://github.com/yancie-yjr/StreamYOLO/releases/download/0.1.0rc/l_s50_one_x.pth">weight</a></td>
+    </tr>
+    <tr>
+      <td align="center">DaDe</td>
+      <td align="center">600×960</td>
+      <td align="center">36.9</td>
+      <td align="center">58.0</td>
+      <td align="center">37.6</td>
+      <td align="center"><a href="https://github.com/yancie-yjr/StreamYOLO/releases/download/0.1.0rc/l_s50_one_x.pth">weight</a></td>
+    </tr>
+    <tr>
+      <td align="center">MTD</td>
+      <td align="center">600×960</td>
+      <td align="center">36.9</td>
+      <td align="center">58.1</td>
+      <td align="center">37.7</td>
+      <td align="center"><a href="https://github.com/Yulin1004/MTD/releases/download/v1.0.0/mtd_l_s50_one_x.pth">weight</a></td>
+    </tr>
+<tr>
+  <td colspan="6" align="center">Low (59ms±1)</td>
+</tr>
+<tr>
+    <tr>
+      <td align="center">StreamYOLO</td>
+      <td align="center">600×960</td>
+      <td align="center">26.2</td>
+      <td align="center">48.0</td>
+      <td align="center">24.4</td>
+      <td align="center"><a href="https://github.com/yancie-yjr/StreamYOLO/releases/download/0.1.0rc/l_s50_one_x.pth">weight</a></td>
+    </tr>
+    <tr>
+      <td align="center">DaDe</td>
+      <td align="center">600×960</td>
+      <td align="center">27.8</td>
+      <td align="center">49.0</td>
+      <td align="center">26.8</td>
+      <td align="center"><a href="https://github.com/yancie-yjr/StreamYOLO/releases/download/0.1.0rc/l_s50_one_x.pth">weight</a></td>
+    </tr>
+    <tr>
+      <td align="center">MTD</td>
+      <td align="center">600×960</td>
+      <td align="center">29.1</td>
+      <td align="center">51.5</td>
+      <td align="center">28.0</td>
+      <td align="center"><a href="https://github.com/Yulin1004/MTD/releases/download/v1.0.0/mtd_l_s50_one_x.pth">weight</a></td>
+    </tr>
+<tr>
+  <td colspan="6" align="center">Medium (69ms±1)</td>
+</tr>
+    <tr>
+      <td align="center">StreamYOLO</td>
+      <td align="center">600×960</td>
+      <td align="center">25.3</td>
+      <td align="center">46.8</td>
+      <td align="center">23.1</td>
+      <td align="center"><a href="https://github.com/yancie-yjr/StreamYOLO/releases/download/0.1.0rc/l_s50_one_x.pth">weight</a></td>
+    </tr>
+    <tr>
+      <td align="center">DaDe</td>
+      <td align="center">600×960</td>
+      <td align="center">25.3</td>
+      <td align="center">46.9</td>
+      <td align="center">23.5</td>
+      <td align="center"><a href="https://github.com/yancie-yjr/StreamYOLO/releases/download/0.1.0rc/l_s50_one_x.pth">weight</a></td>
+    </tr>
+    <tr>
+      <td align="center">MTD</td>
+      <td align="center">600×960</td>
+      <td align="center">26.4</td>
+      <td align="center">49.0</td>
+      <td align="center">24.2</td>
+      <td align="center"><a href="https://github.com/Yulin1004/MTD/releases/download/v1.0.0/mtd_l_s50_one_x.pth">weight</a></td>
+    </tr>
+<tr>
+  <td colspan="6" align="center">High (90ms±1)</td>
+</tr>
+<tr>
+    <tr>
+      <td align="center">StreamYOLO</td>
+      <td align="center">600×960</td>
+      <td align="center">22.7</td>
+      <td align="center">43.3</td>
+      <td align="center">20.5</td>
+      <td align="center"><a href="https://github.com/yancie-yjr/StreamYOLO/releases/download/0.1.0rc/l_s50_one_x.pth">weight</a></td>
+    </tr>
+    <tr>
+      <td align="center">DaDe</td>
+      <td align="center">600×960</td>
+      <td align="center">22.4</td>
+      <td align="center">42.2</td>
+      <td align="center">20.1</td>
+      <td align="center"><a href="https://github.com/yancie-yjr/StreamYOLO/releases/download/0.1.0rc/l_s50_one_x.pth">weight</a></td>
+    </tr>
+<b>
+    <tr>
+      <td align="center">MTD</td>
+      <td align="center">600×960</td>
+      <td align="center">24.1</td>
+      <td align="center">46.1</td>
+      <td align="center">21.4</td>
+      <td align="center"><a href="https://github.com/Yulin1004/MTD/releases/download/v1.0.0/mtd_l_s50_one_x.pth">weight</a></td>
+    </tr>
+</b>
+</table>
 
 ## Dataset Preparation
 This implementation is built upon StreamYOLO.
