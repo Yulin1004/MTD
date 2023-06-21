@@ -181,7 +181,7 @@ cd <MTD_HOME>
 ln -s /path/to/your/Argoverse-1.1 ./data/Argoverse-1.1
 ln -s /path/to/your/Argoverse-HD ./data/Argoverse-HD
 ```
-#### Step2. Download StreamYOLO pretrain weight from [link](https://github.com/yancie-yjr/StreamYOLO/releases/download/0.1.0rc/l_s50_one_x.pth).
+#### Step2. Download StreamYOLO [pretrained_weight](https://github.com/yancie-yjr/StreamYOLO/releases/download/0.1.0rc/l_s50_one_x.pth).
 
 #### Step3. Train model with Argoverse-HD dataset:
 ```shell
