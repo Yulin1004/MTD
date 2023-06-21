@@ -181,9 +181,11 @@ cd <MTD_HOME>
 ln -s /path/to/your/Argoverse-1.1 ./data/Argoverse-1.1
 ln -s /path/to/your/Argoverse-HD ./data/Argoverse-HD
 ```
-#### Step2. Train model with Argoverse-HD dataset:
+#### Step2. Download StreamYOLO pretrain weight from [link](https://github.com/yancie-yjr/StreamYOLO/releases/download/0.1.0rc/l_s50_one_x.pth).
+
+#### Step3. Train model with Argoverse-HD dataset:
 ```shell
-python tools/mtd_train.py -f cfgs/l_s50_onex_mtd_dfp_tal_filp.py -d 8 -b 32 -c /path/to/streamyolo_pretrained_weights.pth -o --fp16
+python tools/mtd_train.py -f cfgs/l_s50_onex_mtd_dfp_tal_filp.py -d 8 -b 32 -o --fp16
 ```
 * -d: number of gpu devices.
 * -b: total batch size, the recommended number for -b is num-gpu * 8.
