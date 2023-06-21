@@ -1,6 +1,6 @@
 dataDir="../../data"  # path/to/your/data
 config="../../cfgs/l_s50_onex_mtd_dfp_tal_filp.py" # path/to/your/cfg
-weights="../../ckpts/latest_ckpt.pth"  # path/to/your/checkpoint_path
+weights="../../ckpts/mtd_l_s50_one_x.pth"  # path/to/your/checkpoint_path
 
 save="modify_no_delay"
 scale=0.5
