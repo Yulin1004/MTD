@@ -67,4 +67,4 @@ python tools/mtd_train.py -f cfgs/l_s50_onex_mtd_dfp_tal_filp.py -d 8 -b 32 -c /
 Modified online evaluation from [sAP](https://github.com/mtli/sAP)
 ```shell
 cd sAP/mtd
-. mtd.sh
+./mtd.sh
