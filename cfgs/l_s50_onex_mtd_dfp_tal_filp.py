@@ -29,7 +29,7 @@ class Exp(MyExp):
 
         self.exp_name = os.path.split(os.path.realpath(__file__))[1].split(".")[0]
 
-        self.output_dir = '/home/308/code/MTD/output/stream_yolo'
+        self.output_dir = '/home/308/code/MTD/output'
 
         self.datasets = []
         self.valdatasets = []
